@@ -1,5 +1,6 @@
 import React from 'react';
 import UserCard from './components/UserCard.js';
+import FollowersCard from './components/FollowersCard';
 
 class App extends React.Component {
   constructor() {
@@ -14,7 +15,7 @@ class App extends React.Component {
   }
 
 
-componentMount() {
+componentDidMount() {
   fetch('https://api.github.com/users/vailspencer')
   .then(res => res.json())
   .then(userData => {
@@ -38,6 +39,7 @@ render() {
     bio = {this.state.bio}
     public_repos ={this.state.public_repos}
     />
+    <FollowersCard />
   </div>
     )
   }
