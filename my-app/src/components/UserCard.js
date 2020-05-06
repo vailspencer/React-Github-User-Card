@@ -8,6 +8,8 @@ function UserCard (props) {
                 <img className = 'img' src={props.avatar} alt= 'user avatar' />
                 <h4>{props.name}</h4>
                 <p>{props.location}</p>
+                <p>{props.bio}</p>
+                <p>Repos: {props.public_repos}</p>
             </div>
 
         </div>

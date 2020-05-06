@@ -31,7 +31,7 @@ componentDidMount() {
 
 render() {
   return(
-  <div>
+  <div className='App'>
     <UserCard 
     name = {this.state.name}
     avatar ={this.state.avatar}

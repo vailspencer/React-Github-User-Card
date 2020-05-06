@@ -8,7 +8,7 @@ function FollowersCard(props){
     const handleFollowers = e => {
         e.preventDefault();
         axios
-            .get('https://api.github.com/users/vailspencer/followers`')
+            .get(`https://api.github.com/users/vailspencer/followers`)
             .then(res => {
                 setFollower(res.data);
                 console.log('Followers', 'follower');
@@ -24,11 +24,10 @@ function FollowersCard(props){
             </button>
             {console.log('follwers return', follower)}
             {follower.map(item => (
-                <div>
-                    <div>
-                        <img src={item.avatar_url} alt='user avatar' />
+                <div className = 'card'>
+                    <div classname = 'left'>
+                        <img className = 'img' src={item.avatar_url} alt='user avatar' />
                         <h4>{item.login}</h4>
-                        <p>{item.location}</p>
                     </div>
                 </div>
             ))}
