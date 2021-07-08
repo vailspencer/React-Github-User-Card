@@ -1,0 +1,39 @@
+.card {
+    margin: auto;
+    width: 450px;
+    display: flex;
+    box-shadow: 0 6.5px 10px -24px rgba(0, 0, 0, 0.306),
+    0 52px 80px -24px rgba(0, 0, 0, 0.52);
+    color:#F0544F;
+    top: 80%;
+    left: 50%;
+    background-color:white ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 8px #C6D8D3;
+    padding-left: 10px;
+    text-align: center;
+    
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+button {
+        margin: 0 auto;
+        width: 80px;
+        display: flex;
+        box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border: solid 4px #C6D8D3
+}
+
